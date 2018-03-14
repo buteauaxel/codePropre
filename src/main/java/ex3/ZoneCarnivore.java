@@ -1,26 +1,26 @@
 package ex3;
 
-import java.util.List;
-
-public class ZoneCarnivore {
-
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
+/**
+ * @author Axel B.
+ *
+ */
+public class ZoneCarnivore extends Zone{
 	
-	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
+	public ZoneCarnivore(){
+		
 	}
+
+/** QTE_POIDS : double
+ * 
+ */
+public static final double QTE_POIDS  = 10;
 	
-	public void afficherListeAnimaux(){
-		for (String nom: noms){
-			System.out.println(nom);
-		}
-	}
+	/**
+	 * @return
+	 */
+	public double getPoids(){
+		return QTE_POIDS;
+
 	
-	public double calculerKgsNourritureParJour(){
-		return noms.size() * 10;
 	}
 }

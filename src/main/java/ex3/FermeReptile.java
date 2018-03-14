@@ -1,30 +1,27 @@
 package ex3;
 
-import java.util.List;
+/**
+ * @author Axel B.
+ *
+ */
+public class FermeReptile extends Zone {
+	
+	public FermeReptile(){
+		
+	}
 
-public class FermeReptile {
+	/**
+	 * QTE_POIDS : double
+	 * 
+	 */
+	public static final double QTE_POIDS = 0.1;
 
-	private List<String> types;
-	private List<String> noms;
-	private List<String> comportements;
-	
-	public void addAnimal(String typeAnimal, String nomAnimal, String comportement) {
-		types.add(typeAnimal);
-		noms.add(nomAnimal);
-		comportements.add(comportement);
-	}
-	
-	public void afficherListeAnimaux(){
-		for (String nom: noms){
-			System.out.println(nom);
-		}
-	}
-	
-	public int compterAnimaux(){
-		return noms.size();
-	}
-	
-	public double calculerKgsNourritureParJour(){
-		return noms.size() * 0.1;
+	/**
+	 * @return
+	 */
+	@Override
+	public double getPoids() {
+		return QTE_POIDS;
+
 	}
 }
