@@ -24,17 +24,13 @@ public class Zoo {
 
 	
 	
-	
-	
 	public void addAnimal(Animal animal){
 	
 	listAnimal.add(animal);
 	for (Zone Zone : zones){
 		Zone.addAnimal(animal);
 			
-		}
-
-		
+		}		
 		
 	}
 

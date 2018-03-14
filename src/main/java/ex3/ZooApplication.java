@@ -16,6 +16,7 @@ public class ZooApplication {
 		zoo.addAnimal(new Animal("Truite dorée", TypeAnimal.POISSON, Comportement.HERBIVORE));
 		zoo.addAnimal(new Animal("Boa constrictor", TypeAnimal.REPTILE, Comportement.CARNIVORE));
 		zoo.addAnimal(new Animal("Python", TypeAnimal.REPTILE, Comportement.CARNIVORE));
+		
 	}
 
 }
