@@ -5,7 +5,7 @@ package ex3;
 
 /**
  * @author Axel B.
- * Enumeration des différents comportements des animaux
+ * Enumeration des différents comportements  animaux
  */
 
 public enum Comportement {
@@ -23,6 +23,9 @@ public enum Comportement {
 	private String comportement;
 	
 	
+	/**
+	 * @param comportement
+	 */
 	private Comportement(String comportement) {
 		this.comportement = comportement;
 	}

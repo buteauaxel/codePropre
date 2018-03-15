@@ -3,6 +3,7 @@
  */
 package ex3;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -11,7 +12,7 @@ import java.util.List;
  */
 public abstract class Zone {
 	
-public  List<Animal> listeAnimaux;
+public  List<Animal> listeAnimaux = new ArrayList<Animal>();
 	
 	
 	public void addAnimal(Animal animal) {

@@ -4,6 +4,7 @@
 package ex3;
 
 /**
+ * Enumeration des différents type d'animaux 
  * @author Axel B.
  *
  */

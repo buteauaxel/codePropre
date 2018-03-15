@@ -1,6 +1,7 @@
 package ex3;
 
 /**
+ * Classe Aquarium qui est une catégorie de zone
  * @author Axel B.
  *
  */

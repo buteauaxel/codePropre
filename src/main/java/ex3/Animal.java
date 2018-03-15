@@ -3,7 +3,7 @@
  */
 package ex3;
 
-/**
+/** Classe Animal qui définit un animal
  * @author Axel B.
  *
  */
@@ -16,6 +16,11 @@ public class Animal {
 	private TypeAnimal typeAnimal;
 	private Comportement comportementAnimal;
 
+	/**
+	 * @param nomAnimal
+	 * @param typeAnimal
+	 * @param comportementAnimal
+	 */
 	public Animal(String nomAnimal, TypeAnimal typeAnimal,Comportement  comportementAnimal) {
 		this.nomAnimal = nomAnimal;
 		this.typeAnimal = typeAnimal;
@@ -23,6 +28,8 @@ public class Animal {
 
 	}
 
+	
+	
 	@Override
 	public String toString() {
 		return "Animal [nomAnimal=" + nomAnimal + ", typeAnimal=" + typeAnimal + ", comportementAnimal="+ comportementAnimal + "]";

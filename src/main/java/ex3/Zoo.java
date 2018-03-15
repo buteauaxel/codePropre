@@ -3,17 +3,27 @@ package ex3;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Axel B.
+ * Classe Zoo qui regroupe les animaux 
+ */
 public class Zoo {
 
+	/** nom : String
+	 * 
+	 */
 	private String nom;
-	private SavaneAfricaine savaneAfricaine;
-	private ZoneCarnivore zoneCarnivore;
-	private FermeReptile fermeReptile;
-	private Aquarium aquarium;
-
+	/** savaneAfricaine : SavaneAfricaine
+	 * 
+	 */
+	
 	private List<Animal> listAnimal = new ArrayList<>();
 	private List<Zone> zones = new ArrayList<>();
 	
+	/**
+	 * Ajoute les différentes zones du zoo
+	 * @param nom
+	 */
 	public Zoo(String nom){
 		this.nom = nom;
 		zones.add(new ZoneCarnivore());
@@ -24,6 +34,9 @@ public class Zoo {
 
 	
 	
+	/**
+	 * @param animal
+	 */
 	public void addAnimal(Animal animal){
 	
 	listAnimal.add(animal);
@@ -34,11 +47,13 @@ public class Zoo {
 		
 	}
 
+	/**
+	 * Affiche la liste des animaux par zone
+	 */
 	public void afficherListeAnimaux() {
-		savaneAfricaine.getListeAnimaux();
-		zoneCarnivore.getListeAnimaux();
-		fermeReptile.getListeAnimaux();
-		aquarium.getListeAnimaux();
+		for(Animal animal : listAnimal){
+			System.out.println(animal);
+		}
 	}
 
 	/**

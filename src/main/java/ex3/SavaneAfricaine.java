@@ -1,11 +1,15 @@
 package ex3;
 
 /**
+ * Classe SavaneAfricaine qui est une catégorie de zone
  * @author Axel B.
  *
  */
 public class SavaneAfricaine extends Zone {
 	
+	/**
+	 * constructeur vide
+	 */
 	public SavaneAfricaine(){
 		
 	}

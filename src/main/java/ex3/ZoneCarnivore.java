@@ -1,6 +1,7 @@
 package ex3;
 
 /**
+ * Classe ZoneCarnivore qui est une catégorie de zone
  * @author Axel B.
  *
  */

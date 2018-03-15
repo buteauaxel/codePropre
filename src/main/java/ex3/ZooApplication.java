@@ -17,6 +17,14 @@ public class ZooApplication {
 		zoo.addAnimal(new Animal("Boa constrictor", TypeAnimal.REPTILE, Comportement.CARNIVORE));
 		zoo.addAnimal(new Animal("Python", TypeAnimal.REPTILE, Comportement.CARNIVORE));
 		
+		zoo.afficherListeAnimaux();
+		
+//		for(Zone zone : zoo.getListZone()){
+//			System.out.println("________________________" + zone.getClass().getSimpleName() + "________________________");
+//			System.out.println("Nombre d'animaux : " + zone.compterAnimaux());
+//			System.out.println("Nourriture : " + zone.calculerKgsNourritureParJour() + " Kg");
+//			zone.afficherListeAnimaux();
+//		}
 	}
 
 }
